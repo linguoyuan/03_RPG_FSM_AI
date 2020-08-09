@@ -1,0 +1,20 @@
+﻿[IdleState]
+NoHealth>Dead
+SawPlayer>Pursuit
+
+[DeadState]
+
+[PursuitState]
+ReachPlayer>Attacking
+NoHealth>Dead
+LosePlayer>Default
+
+[AttackingState]
+NoHealth>Dead
+WithOutAttack >Pursuit
+KilledPlayer >Default 
+
+[PatrollingState]
+PatrolComplete>Idle
+NoHealth>Dead
+SawPlayer>Pursuit
